@@ -1,0 +1,7 @@
+{
+  "name": "SportDrinks",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
