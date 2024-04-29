@@ -1,0 +1,23 @@
+.menu-button {
+    width: 100%; 
+    height: 40px; 
+    margin-bottom: 5px; 
+    font-size: 16px; 
+  }
+  ion-menu::part(backdrop) {
+    background-color: rgba(119, 171, 231, 0.5);
+  }
+  
+  ion-menu::part(container) {
+    border-radius: 0 40px 40px 0;
+  
+    box-shadow: 4px 0px 16px rgba(119, 171, 231, 0.5);
+  }
+  .map {
+  height: 100%;
+  }
+  body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }

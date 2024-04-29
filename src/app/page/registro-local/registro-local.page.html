@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registro local</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input type="text" name="txNombre"[(ngModel)]="newTienda.nombre" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Dirección</ion-label>
+    <ion-input type="text" name="txDireccion" [(ngModel)]="newTienda.direccion" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">RUT</ion-label>
+    <ion-input type="text" name="txRut" [(ngModel)]="newTienda.rut" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Link</ion-label>
+    <ion-input type="text" name="txLink" [(ngModel)]="newTienda.link" required></ion-input>
+  </ion-item>
+   <ion-button expand="block" color="dark " (click)="crearTienda()"> Agregar tienda</ion-button>
+   <ion-button expand="block" color="dark " routerLink="/tiendas"> Atras </ion-button>
+</ion-content>

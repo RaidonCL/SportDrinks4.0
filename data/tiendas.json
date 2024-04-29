@@ -1,0 +1,32 @@
+{
+  "Tiendas": [
+    {
+      "id": "1",
+      "rut": "77.777.777",
+      "nombre": "La Roca",
+      "direccion": "Valle central 1397, Puente Alto",
+      "link": "https://www.google.cl/maps/place/Almac%C3%A9n+La+Roca/@-33.5782799,-70.5657866,20.25z/data=!4m6!3m5!1s0x9662d6dc707c95f7:0x3c446f2f234d89a7!8m2!3d-33.5782427!4d-70.5659776!16s%2Fg%2F1tgkjhf0?entry=ttu"
+    },
+    {
+      "id": "2026",
+      "rut": "88.888.88",
+      "nombre": "Botillería 2000",
+      "direccion": "gabriela ote 1096, puente alto",
+      "link": "https://g.co/kgs/WWKw9ZQ"
+    },
+    {
+      "id": "e390",
+      "rut": "77.123.456-8",
+      "nombre": "El Castillo Del Licor",
+      "direccion": "Gerónimo de Alderete 1799, 8241839 La Florida",
+      "link": "https://g.co/kgs/MJ1QR5a"
+    },
+    {
+      "id": "597b",
+      "rut": "10123456",
+      "nombre": "Duoc",
+      "direccion": "Duoc02",
+      "link": "a"
+    }
+  ]
+}

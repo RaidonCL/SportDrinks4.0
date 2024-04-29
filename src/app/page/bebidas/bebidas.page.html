@@ -1,0 +1,75 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding"><ion-list>
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-button class="menu-button" routerLink="/principal">Principal</ion-button>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-button class="menu-button" routerLink="/tiendas">Tiendas</ion-button>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-button class="menu-button" routerLink="/rutas">Rutas</ion-button>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-button class="menu-button" routerLink="/sectores">Sectores</ion-button>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-button class="menu-button" routerLink="/bebidas">Bebidas</ion-button>
+          </ion-item>
+        </ion-menu-toggle>
+
+      </ion-list></ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>SportDrinks</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding" class="news-content">
+      <h1 class="news-title">Bebidas</h1>
+      <div class="news-container">
+        <!-- Bebidas -->
+          <ion-card>
+    <img alt="Powerade Blue" src="https://falabella.scene7.com/is/image/Falabella/gsc_128307021_5146419_1?wid=1500&hei=1500&qlt=70" />
+    <ion-card-header>
+      <ion-card-title>Powerade Blue</ion-card-title>
+      <ion-card-subtitle>$1200</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Energízate e hidrátate con esta bebida Isotónica Powerade Sin Azúcar Frozen Blast en Botella de 1.1L. 
+    </ion-card-content>
+  </ion-card>  
+
+  <ion-card>
+    <img alt="Powerade orange" src="https://unimarc.vtexassets.com/arquivos/ids/234157/000000000663148003-UN-01.jpg?v=638228063538200000" />
+    <ion-card-header>
+      <ion-card-title>Powerade Orange</ion-card-title>
+      <ion-card-subtitle>$1200</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Energízate e hidrátate con esta Bebida isotónica Powerade naranja 1.1 L
+    </ion-card-content>
+  </ion-card> 
+        </div>
+      </ion-content>
+  </div>
+</ion-app>
+

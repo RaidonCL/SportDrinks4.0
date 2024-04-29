@@ -1,0 +1,59 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding"><ion-list>
+      <ion-menu-toggle>
+        <ion-item>
+          <ion-button class="menu-button" routerLink="/principal">Principal</ion-button>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item>
+          <ion-button class="menu-button" routerLink="/tiendas">Tiendas</ion-button>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item>
+          <ion-button class="menu-button" routerLink="/rutas">Rutas</ion-button>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item>
+          <ion-button class="menu-button" routerLink="/sectores">Sectores</ion-button>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item>
+          <ion-button class="menu-button" routerLink="/bebidas">Bebidas</ion-button>
+        </ion-item>
+      </ion-menu-toggle>
+      </ion-list></ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>SportDrinks</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item *ngFor="let t of tiendas; let indexArray = index">
+          <ion-label>
+            {{ t?.rut }} - {{t?.nombre}} - {{t?.direccion}}
+          </ion-label>
+          <ion-button fill="outline" size="small" href="{{t?.link}}">Link</ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+    <ion-content>
+      <ion-button routerLink="/registro-local">Agregar tienda</ion-button>
+    </ion-content>
+  </div>
+</ion-app>

@@ -1,0 +1,47 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente para todo el cuerpo */
+    background-color: black;
+  }
+  
+  ion-menu::part(backdrop) {
+    background-color: rgba(119, 171, 231, 0.5);
+  }
+  
+  ion-menu::part(container) {
+    border-radius: 0 40px 40px 0;
+  
+    box-shadow: 4px 0px 16px rgba(119, 171, 231, 0.5);
+  }
+  
+  /* Estilos para el título en la barra de navegación */
+  .main-toolbar ion-title {
+    color: white; /* Color del texto del título */
+  }
+  
+  /* Estilos para el contenido principal */
+  .news-title {
+    color: #000000; /* Color del título de las noticias */
+  }
+  
+  .news-container {
+    background-color: #ffffff; /* Color de fondo del contenedor de noticias (celeste) */
+    
+  }
+  
+  ion-card {
+    background-color: rgb(0, 0, 0); /* Color de fondo de las tarjetas de noticias */
+    border: 1px solid #87CEEB; /* Borde de las tarjetas de noticias */
+  }
+  
+  
+  ion-card-content {
+    color: rgb(255, 255, 255); /* Color del texto del contenido de las tarjetas de noticias */
+  }
+    .menu-button {
+      width: 100%; 
+      height: 40px; 
+      margin-bottom: 5px; 
+      font-size: 16px; 
+    }
+  

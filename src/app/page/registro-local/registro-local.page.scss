@@ -1,0 +1,9 @@
+ion-item {
+    --ion-color-base: #ffffff; /* Blanco */
+    --ion-color-contrast: #000000; /* Negro */
+  }
+  
+  ion-button[color="dark"] {
+    --ion-color-base: #000000; /* Negro */
+    --ion-color-contrast: #ffffff; /* Blanco */
+  }

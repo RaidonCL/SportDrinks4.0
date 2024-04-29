@@ -1,0 +1,79 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding"><ion-list>
+      <ion-menu-toggle>
+        <ion-item>
+          <ion-button class="menu-button" routerLink="/principal">Principal</ion-button>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item>
+          <ion-button class="menu-button" routerLink="/tiendas">Tiendas</ion-button>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item>
+          <ion-button class="menu-button" routerLink="/rutas">Rutas</ion-button>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item>
+          <ion-button class="menu-button" routerLink="/sectores">Sectores</ion-button>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item>
+          <ion-button class="menu-button" routerLink="/bebidas">Bebidas</ion-button>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list></ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title routerLink="/principal" >SportDrinks</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <div class="news-container">
+      <!-- Noticias -->
+      <ion-card>
+        <img alt="Puente Alto, Ciudad del Sol" src="assets/img/RutaPteAlto1.png" />
+        <ion-card-header>
+          <ion-card-title>Puente Alto, Ciudad del Sol</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Distancia: 4,83 km<br>
+          Desnivel positivo: 14 m<br>
+          Dificultad técnica: Moderado<br>
+          Desnivel negativo: 14 m
+          <ion-button fill="outline" size="small" href="https://maps.app.goo.gl/LGgxd7wXVUQYer1q8">Inicio Ruta</ion-button>
+        </ion-card-content>
+        <!-- Botón Me gusta para la primera ruta -->
+        <ion-icon [name]="isLiked1 ? 'heart' : 'heart-outline'" (click)="likePost(1)" color="danger" size="large"></ion-icon>
+      </ion-card>
+      <ion-card>
+        <img alt="Silhouette of mountains" src="assets/img/RutaPteAlto2.png" />
+        <ion-card-header>
+          <ion-card-title>Puente Alto, Ciudad del Sol, Los Manios, Concha y Toro</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Distancia: 10,91 km<br>
+          Desnivel positivo: 32 m<br>
+          Dificultad técnica: Moderado<br>
+          Desnivel negativo: 32 m
+          <ion-button fill="outline" size="small" href="https://maps.app.goo.gl/cUKrEtQPw2g5AeAg7">Inicio Ruta</ion-button>
+        </ion-card-content>
+        <!-- Botón Me gusta para la segunda ruta -->
+        <ion-icon [name]="isLiked2 ? 'heart' : 'heart-outline'" (click)="likePost(2)" color="danger" size="large"></ion-icon>
+      </ion-card>
+    </div>
+  </div>
+</ion-app>
